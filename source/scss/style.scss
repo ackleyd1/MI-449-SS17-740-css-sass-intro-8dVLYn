@@ -3,20 +3,21 @@
 html {
   font-size: $font-base-size;
   background-color: $quaternary-color;
+  font-family: $font-family;
 }
 
-body {
-}
-
-h1, h4 {
+h1,
+h4 {
   color: $primary-color;
 }
 
-h2, h5 {
+h2,
+h5 {
   color: $secondary-color;
 }
 
-h3, h6 {
+h3,
+h6 {
   color: $tertiary-color;
 }
 
@@ -26,35 +27,37 @@ p {
 
 a {
   text-decoration: none;
+
   &:focus {
     text-decoration: underline;
   }
+
   &:visited {
     text-decoration: underline;
     color: $tertiary-color;
   }
 }
 
-input, textarea {
+input,
+textarea {
   border-color: $primary-color;
   color: $primary-color;
   font-weight: bold;
   font-size: $font-base-size;
-  background-color: transparentize($primary-color, 0.50);
+  background-color: transparentize($primary-color, 0.5);
   outline: none;
+
   &[type="text"] {
     height: 2rem;
   }
+
   &[type="button"] {
     height: 2rem;
     width: 8rem;
   }
+
   &[type="password"] {
     height: 2rem;
-  }
-  &[type="checkbox"] {
-  }
-  &[type="radio"] {
   }
 }
 
@@ -84,18 +87,22 @@ table {
   border: 1px solid $secondary-color;
   border-collapse: collapse;
   background-color: white;
+
   thead {
     background-color: $tertiary-color;
+
     tr {
       th {
         height: 2rem;
       }
     }
   }
-  tbody{
+
+  tbody {
     tr {
       text-align: center;
       background-color: transparentize($tertiary-color, 0.8);
+
       td {
         color: $primary-color;
       }
